@@ -3,23 +3,18 @@ import { Form , Button} from 'react-bootstrap';
 const Formulario = () => {
   return (
     <>
-    <div>
-
-      <Form>
+    <div className='formulario-container  my-3'>
+      <Form className='py-5 px-3'>
         {/* nombre */}
         <Form.Group className="mb-3" controlId="formBasicEmail">
           <Form.Label>Nombre</Form.Label>
-          <Form.Control type="text" placeholder="Ingrese su Apellido" />
-          <Form.Text className="text-muted">
-            We'll never share your email with anyone else.
-          </Form.Text>
+          <Form.Control type="text" placeholder="Ingrese su Nombre" />
         </Form.Group>
+
+        {/* Apellido */}
         <Form.Group className="mb-3" controlId="formBasicEmail">
           <Form.Label>Apellido</Form.Label>
           <Form.Control type="text" placeholder="Ingrese su Apellido" />
-          <Form.Text className="text-muted">
-            We'll never share your email with anyone else.
-          </Form.Text>
         </Form.Group>
         {/* DNI */}
         <Form.Group className="mb-3" controlId="formBasicPassword">
@@ -31,17 +26,18 @@ const Formulario = () => {
         <Form.Group className="mb-3" controlId="formBasicEmail">
           <Form.Label>Email address</Form.Label>
           <Form.Control type="email" placeholder="Enter email" />
-          <Form.Text className="text-muted">
-            We'll never share your email with anyone else.
-          </Form.Text>
         </Form.Group>
 
         <Form.Group className="mb-3" controlId="formBasicCheckbox">
           <Form.Check type="checkbox" label="Check me out"/>
 
         </Form.Group>
-        <Button variant="primary" type="submit">
+          <Button variant="dark" type="submit" className='btn-submit'>
           Enviar Fomrulario
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
         </Button>
       </Form>
     </div>

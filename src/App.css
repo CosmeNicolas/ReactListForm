@@ -9,9 +9,9 @@ sans-serif;
  */
 
 /* colores
-#4f7c33
-#1d1f22
-#393E46
+#0D7377
+#32E0C4
+#212121
 #EEEEEE
 */
 
@@ -26,7 +26,7 @@ sans-serif;
 }
 
 body {
-background: #1d1f22 ;
+background: #212121 ;
 }
 
 h1{
@@ -34,9 +34,20 @@ h1{
   font-family: 'Gajraj One',sans-serif;
 }
 
+.formulario-container{
+  color: aliceblue;
+  background: rgba(255, 255, 255, 0.125);
+  box-shadow: 0 8px 22px 0 rgba(83, 102, 114, 0.467);
+  backdrop-filter: blur(0px);
+  -webkit-backdrop-filter: blur(0px);
+  border-radius: 10px;
+  border: 2px solid rgba(150, 169, 157, 0.418);
+  font-family: 'Comfortaa', sans-serif;
+}
+
 .footer{ 
   font-family: 'Comfortaa',sans-serif;
-  background-color: #4f7c33;
+  background-color: #0D7377;
   color: #EEEE;
 }
 
@@ -53,4 +64,72 @@ h1{
   }
 }
 
+Button {
+  font-size: x-large;
+  font-family: 'Saira Semi Condensed', sans-serif;
+  color: #FFFFFF;
+  margin-top: 10%;
+  position: relative;
+ 
+  border: none;
+  outline: none;
+  background: black;
+  cursor: pointer;
+  transition: .5s;
+  overflow: hidden;
+}
+
+Button::hover {
+  color: white;
+}
+
+Button span {
+  position: absolute;
+  background-color: #0f9da1;
+  transition: .5s;
+}
+
+Button span:nth-child(1) {
+  width: 100%;
+  height: 3px;
+  top: 0;
+  left: -100%;
+}
+
+Button span:nth-child(2) {
+  width: 100%;
+  height: 3px;
+  bottom: 0;
+  right: -100%;
+}
+
+Button span:nth-child(3) {
+  width: 3px;
+  height: 100%;
+  bottom: -100%;
+  left: 0;
+}
+
+Button span:nth-child(4) {
+  width: 3px;
+  height: 100%;
+  top: -100%;
+  right: 0;
+}
+
+Button:hover span:nth-child(1) {
+  left: 0;
+}
+
+Button:hover span:nth-child(2) {
+  right: 0;
+}
+
+Button:hover span:nth-child(3) {
+  bottom: 0;
+}
+
+Button:hover span:nth-child(4) {
+  top: 0;
+}
 
