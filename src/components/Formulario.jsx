@@ -32,7 +32,7 @@ const Formulario = () => {
           <Form.Check type="checkbox" label="Check me out"/>
 
         </Form.Group>
-          <Button variant="dark" type="submit" className='btn-submit'>
+          <Button variant="dark" type="submit" className='m-0'>
           Enviar Fomrulario
             <span></span>
             <span></span>
