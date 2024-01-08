@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&family=Gajraj+One&display=swap');
+/* fuente
+letra contenido
+font-family: 'Comfortaa',
+sans-serif;
+//letra titulo
+font-family: 'Gajraj One',
+sans-serif;
+ */
+
+/* colores
+#7BC74D
+#222831
+#393E46
+#EEEEEE
+*/
+
+#root {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.main {
+  flex-grow: 1;
+}
+
+body {
+  background: #222831;
+}
+
+h1{
+  color: #EEEE;
+  font-family: 'Gajraj One',sans-serif;
+}
+
+.footer{ 
+  font-family: 'Comfortaa',sans-serif;
+}
+
+.logo {
+  animation: logo 5s linear 0ms infinite normal forwards;
+}
+
+@keyframes logo {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+
