@@ -9,8 +9,8 @@ sans-serif;
  */
 
 /* colores
-#7BC74D
-#222831
+#4f7c33
+#1d1f22
 #393E46
 #EEEEEE
 */
@@ -26,7 +26,7 @@ sans-serif;
 }
 
 body {
-  background: #222831;
+background: #1d1f22 ;
 }
 
 h1{
@@ -36,6 +36,8 @@ h1{
 
 .footer{ 
   font-family: 'Comfortaa',sans-serif;
+  background-color: #4f7c33;
+  color: #EEEE;
 }
 
 .logo {
