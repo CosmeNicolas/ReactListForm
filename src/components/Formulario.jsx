@@ -7,7 +7,7 @@ const Formulario = () => {
 
   const [mostrarAlertaExitosa, setMostrarAlertaExitosa] = useState(false);
   const [mostrarAlertaIncompleta, setMostrarAlertaIncompleta] = useState(false);
-  const [mostrarAlertaDNIInvalido, setMostrarAlertaDNIInvalido] = useState(false); // Estado y función para la alerta de DNI inválido
+  const [mostrarAlertaDniInvalido, setMostrarAlertanDniInvalido] = useState(false); // Estado y función para la alerta de DNI inválido
   const initialState = { nombre: '', apellido: '', dni: '', email: '' };
 
 
@@ -16,14 +16,12 @@ const Formulario = () => {
     console.log(DatoFormulario)
 
     // Validar DNI
-    if (name === 'dni') {
-      if (!/^\d{0,8}$/.test(value)) {
-        setMostrarAlertaDNIInvalido(true); // Mostrar alerta si el DNI no cumple con las condiciones
-        return;
-      } else {
-        setMostrarAlertaDNIInvalido(false); // Ocultar alerta si el DNI es válido
-      }
-    }
+   if(name === 'dni') {
+     if (value.length != 8 || !/^\d{8}$/.test(value) )
+     setMostrarAlertanDniInvalido(true)
+   } else {
+     setMostrarAlertanDniInvalido(false)
+   }
     
     setDatoFormulario({ ...DatoFormulario, [name]: value });
   };
@@ -39,7 +37,13 @@ const Formulario = () => {
       setMostrarAlertaExitosa(true);
       setMostrarAlertaIncompleta(false);
       setDatoFormulario(initialState)
-      // Aquí puedes agregar lógica adicional para enviar los datos si es necesario
+     
+      //agrego un setTimeOut para q luego de enviar el formulairo despues de dos segundos se lipien los alert
+      setTimeout(() => {
+        setMostrarAlertaExitosa(true);
+        setMostrarAlertaIncompleta(false);
+      }, 2000);
+
     } else {
       setMostrarAlertaExitosa(false);
       setMostrarAlertaIncompleta(true);
@@ -93,7 +97,7 @@ const Formulario = () => {
            value={DatoFormulario.dni}
            required
            />
-            {mostrarAlertaDNIInvalido && (
+            {mostrarAlertaDniInvalido && (
               <Alert variant="danger" className='mt-1'>
                 El DNI debe contener exactamente 8 números.
               </Alert>
