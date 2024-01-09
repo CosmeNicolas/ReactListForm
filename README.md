@@ -1,8 +1,10 @@
-# React + Vite
+# Formulario Simple con React
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Realice un formulario con sus respectivas validaciones , usando los states de react y los manejos de formulario.
 
-Currently, two official plugins are available:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Librerias y Framewroks
+
+- [GoogleFont](https://fonts.google.com/)
+- [Bootstraps](https://react-bootstrap.github.io/) 
+- [ColorHunt](https://colorhunt.co/palette/1d2b537e2553ff004dfaef5d)
