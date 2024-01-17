@@ -34,8 +34,6 @@ Una vez que todas las dependencias estén instaladas, puedes ejecutar la aplicac
 
 Este comando iniciará el servidor de desarrollo proporcionado por Vite.
 
-
-
 ### Deploy del Proyecto 💻
 
 Puedes ver el proyecto y probarlo ingresando a este link
